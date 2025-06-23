@@ -5,11 +5,11 @@ The needed components are available as [Docker](https://www.docker.com/) images 
 
 ## Background
 
-This blueprint is an opnionated GeoNode setup which evolved from several upstream discussions[^1][^2]. The main goal of this blueprint is to have a simplified view on the GeoNode actual setup with less cluttered configuration while preserving flexibility. At the time of writing GeoNode setup is much convoluted at several places so one have to watch out making changes to the defaults (lots of things have side effects). However, the blueprint cannot solve the upstream issues, but tries to narrow the focus on the most important parts. 
+This blueprint is an opinionated GeoNode setup which evolved from several upstream discussions[^1][^2]. The main goal of this blueprint is to have a simplified view on the GeoNode actual setup with less cluttered configuration while preserving flexibility. At the time of writing GeoNode setup is much convoluted at several places so one have to watch out making changes to the defaults (lots of things have side effects). However, the blueprint cannot solve the upstream issues, but tries to narrow the focus on the most important parts. 
 
 We tend to establish a better maintainable project setup[^2][^3] than [the official geonode-project](https://github.com/GeoNode/geonode-project) offers at the moment. Additionally, we added a development setup [using `devcontainer`](https://containers.dev/) configuration [for the Thuenen Atlas](https://github.com/Thuenen-GeoNode-Development/thuenen_atlas), which integrates nicely with IDEs [like vs-code](https://code.visualstudio.com/docs/devcontainers/containers).
 
-Feel free to test and report any findings like bugs, issues, and even conceptual things. We hope, the setup turns to be helpful for other projects and are eager to further improve the setup based on your requirements. In any case the blueprint may give you a good starting point to create you own setup.
+Feel free to test and report any findings like bugs, issues, and even conceptual things. We hope the setup turns out to be helpful for other projects and are eager to further improve the setup based on your requirements. In any case the blueprint may give you a good starting point to create you own setup.
 
 [^1]: https://github.com/GeoNode/geonode-project/issues/471
 [^2]: https://github.com/GeoNode/geonode-project/discussions/460
@@ -35,7 +35,8 @@ It exposes OGC APIs such as WMS, WFS, etc.
 
 Make sure you have installed `git`, `Docker` and `docker compose`.
 
-Clone the [repository containing a GeoNode Docker setup]( https://github.com/GeoNodeUserGroup-DE/geonode-blueprint-docker) and change directory your local working copy:
+Clone the [repository containing a GeoNode Docker setup]( https://github.com/GeoNodeUserGroup-DE/geonode-blueprint-docker) and change directory to your local working copy:
+
 
 ```
 git clone --recurse-submodules https://github.com/GeoNodeUserGroup-DE/geonode-blueprint-docker geonode
